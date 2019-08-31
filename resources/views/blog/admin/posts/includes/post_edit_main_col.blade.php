@@ -84,7 +84,7 @@
                                    type="checkbox"
                                    class="form-check-input"
                                    value="1"
-                                   @if($item->is_bublished)
+                                   @if($item->is_published)
                                    checked="checked"
                                    @endif
                             >
