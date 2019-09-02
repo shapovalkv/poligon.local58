@@ -85,8 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="{{ url('admin/blog/posts') }}">Post</a>
+                    <a href="{{ url('admin/blog/categories') }}">Categorirs</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
