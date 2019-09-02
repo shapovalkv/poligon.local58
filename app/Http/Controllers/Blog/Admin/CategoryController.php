@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Blog\Admin;
 
 use App\Http\Requests\BlogCategoryCreateRequest;
 use App\Http\Requests\BlogCategoryUpdateRequest;
+use App\Http\Requests\BlogPostUpdateRequest;
 use App\Models\BlogCategory;
 use App\Repositories\BlogCategoryRepository;
 
@@ -60,9 +61,11 @@ class CategoryController extends BaseController
     public function store(BlogCategoryCreateRequest $request)
     {
         $data = $request->input();
+
+        /* // Ушло в обсервер
         if (empty($data['slug'])) {
             $data['slug'] = str_slug($data['title']);
-        }
+        } */
 
         // Создаст обьект но не добавит в БД
 //        $item = new BlogCategory($data);
@@ -110,7 +113,7 @@ class CategoryController extends BaseController
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  BlogPostUpdateRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
