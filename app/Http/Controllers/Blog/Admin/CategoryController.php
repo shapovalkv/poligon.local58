@@ -93,6 +93,28 @@ class CategoryController extends BaseController
      */
     public function edit($id)
     {
+//        $item = $this->blogCategoryRepository->getEdit($id);
+//
+//        $v['title_before'] = $item->title;
+//
+//        $item->title = 'ASDadsadadDDD asdasd 1212';
+//
+//        $v['title_after'] = $item->title;
+//        $v['getAttribute'] = $item->getAttribute('title');
+//        $v['attributesToArray'] = $item->attributesToArray();
+//        $v['attributes'] = $item->attributes['title'];
+//        $v['getAttributeValue'] = $item->getAttributeValue('title');
+//        $v['getMutatedAttributes'] = $item->getMutatedAttributes();
+//        $v['hasGetMutator for title'] = $item->hasGetMutator('title');
+//        $v['tiArray'] = $item->toArray();
+//
+//        dd($v, $item);
+//
+//        if (emty($item)) {
+//            abort(404);
+//        }
+
+
 
 //       $item = BlogCategory::findOrFail($id);
 //       $categoryList = BlogCategory::all();
