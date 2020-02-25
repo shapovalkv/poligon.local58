@@ -18,6 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::group(['prefix' => 'digging_deeper',], function () {
+    Route::get('collections', 'DiggingDeeperController@collections')
+        ->name('digging_deeper.collections');
+});
 
 Route::group(['namespace' => 'Blog', 'prefix' => 'blog'], function() {
     Route::resource('posts', 'PostController')->names('blog.posts');
@@ -48,3 +52,7 @@ Route::group($groupData, function () {
 
 //Route::resource('rest', 'RestTestController')->names('restTest');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
